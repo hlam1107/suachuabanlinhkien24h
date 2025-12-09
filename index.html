@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garage Bác Sĩ Xe - Cứu Hộ 24/7</title>
+    <meta name="description" content="Dịch vụ cứu hộ ô tô 24/7, có mặt sau 15 phút. Sửa chữa uy tín, minh bạch giá cả. Hotline khẩn cấp.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/index.css">
+    <style>
+        /* Hero Section Specific Styles */
+        .hero {
+            background-color: var(--color-secondary);
+            color: white;
+            padding: var(--spacing-xl) var(--spacing-md);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-bottom-left-radius: var(--radius-lg);
+            border-bottom-right-radius: var(--radius-lg);
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #E3F2FD;
+            margin-bottom: var(--spacing-lg);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn-sos {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--color-primary);
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 800;
+            padding: var(--spacing-md) var(--spacing-xl);
+            border-radius: var(--radius-full);
+            box-shadow: var(--shadow-emergency);
+            animation: pulse-red 2s infinite;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .btn-sos:hover {
+            background-color: var(--color-primary-hover);
+        }
+
+        /* Core Values */
+        .features {
+            padding: var(--spacing-xl) 0;
+            background-color: var(--color-bg-surface);
+            margin-top: -30px; /* Overlap effect */
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            width: 90%;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            z-index: 10;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--spacing-lg);
+            padding: 0 var(--spacing-lg);
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: var(--spacing-md);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+            transition: transform 0.2s;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+            border-color: var(--color-secondary);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-sm);
+            display: block;
+        }
+
+        .feature-title {
+            color: var(--color-secondary);
+            font-size: 1.25rem;
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        /* Navigation */
+        .nav-grid {
+            margin-top: var(--spacing-xl);
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-md);
+            flex-wrap: wrap;
+            padding-bottom: var(--spacing-xl);
+        }
+
+        .nav-card {
+            background: white;
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+            width: 300px;
+            text-decoration: none;
+            color: var(--color-text-main);
+            border: 1px solid transparent;
+        }
+
+        .nav-card:hover {
+            border-color: var(--color-secondary);
+            box-shadow: var(--shadow-md);
+        }
+
+        .nav-card h3 {
+            color: var(--color-secondary);
+            margin-bottom: var(--spacing-xs);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>GARAGE BÁC SĨ XE</h1>
+            <p>Uy Tín - Chuyên Nghiệp - Tận Tâm 24/7</p>
+            
+            <a href="tel:1900xxxx" class="btn-sos">
+                📞 GỌI CỨU HỘ NGAY
+            </a>
+            <p style="font-size: 0.9rem; opacity: 0.9;">Bấm để gọi ngay! Có mặt sau 15 phút.</p>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="features">
+        <div class="feature-grid">
+            <div class="feature-item">
+                <span class="feature-icon">⏱️</span>
+                <h3 class="feature-title">Có Mặt Sau 15 Phút</h3>
+                <p>Mạng lưới cứu hộ rộng khắp, cam kết phản ứng nhanh mọi khung giờ.</p>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">💰</span>
+                <h3 class="feature-title">Minh Bạch Giá Cả</h3>
+                <p>Bảng giá niêm yết công khai. Không vẽ bệnh, không chặt chém.</p>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">🔧</span>
+                <h3 class="feature-title">Chuẩn Kỹ Sư</h3>
+                <p>Bắt đúng bệnh, sửa một lần là xong. Bảo hành dài hạn.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <div class="container">
+        <div class="nav-grid">
+            <a href="services.html" class="nav-card">
+                <h3>🛠️ Dịch Vụ & Bảng Giá</h3>
+                <p>Xem bảng giá chi tiết và quy trình sửa chữa 5 bước.</p>
+            </a>
+            <a href="parts.html" class="nav-card">
+                <h3>⚙️ Linh Kiện Chính Hãng</h3>
+                <p>Cung cấp phụ tùng Sỉ & Lẻ. Cam kết chính hãng/OEM.</p>
+            </a>
+        </div>
+    </div>
+
+    <footer style="background: #333; color: white; padding: 2rem; text-align: center; margin-top: auto;">
+        <p>© 2024 Garage Bác Sĩ Xe. Hotline: 09xx.xxx.xxx</p>
+    </footer>
+
+</body>
+</html>

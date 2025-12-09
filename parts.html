@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linh Kiện Ô Tô - Garage Bác Sĩ Xe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="src/index.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .page-header {
+            background-color: var(--color-secondary);
+            color: white;
+            padding: var(--spacing-lg) var(--spacing-md);
+            text-align: center;
+        }
+
+        .split-section {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--spacing-xl);
+            padding: var(--spacing-xl) 0;
+        }
+
+        @media (min-width: 768px) {
+            .split-section {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .section-card {
+            background: white;
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-md);
+        }
+
+        .section-card h2 {
+            border-bottom: 2px solid var(--color-border);
+            padding-bottom: var(--spacing-sm);
+            margin-bottom: var(--spacing-md);
+            color: var(--color-secondary);
+        }
+
+        /* Form Styles */
+        .form-group {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: var(--spacing-xs);
+            font-weight: 500;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: var(--spacing-sm);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-sm);
+            font-family: inherit;
+        }
+
+        .form-btn {
+            background-color: var(--color-primary);
+            color: white;
+            padding: var(--spacing-sm) var(--spacing-lg);
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            width: 100%;
+        }
+
+        .form-btn:hover {
+            background-color: var(--color-primary-hover);
+        }
+
+        /* Retail Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: var(--spacing-md);
+        }
+
+        .product-item {
+            text-align: center;
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-sm);
+            padding: var(--spacing-md);
+            transition: 0.2s;
+        }
+
+        .product-item:hover {
+            border-color: var(--color-primary);
+        }
+
+        .product-icon {
+            font-size: 2rem;
+            display: block;
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .guarantee {
+            text-align: center;
+            margin-top: var(--spacing-xl);
+            padding: var(--spacing-lg);
+            background: #e3f2fd;
+            border-radius: var(--radius-md);
+            color: var(--color-secondary);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="page-header">
+        <div class="container">
+            <a href="index.html" style="color:white; opacity:0.8; margin-bottom: 1rem; display:block;">← Quay lại Trang
+                Chủ</a>
+            <h1>KHO LINH KIỆN - PHỤ TÙNG</h1>
+            <p>Chính Hãng - Giá Gốc - Bảo Hành Dài Hạn</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="split-section">
+
+            <!-- Retail Section -->
+            <section class="section-card">
+                <h2>Bán Lẻ (Cá Nhân)</h2>
+                <p style="margin-bottom: var(--spacing-md);">Cung cấp phụ tùng thay thế nhanh cho chủ xe. Hàng chính
+                    hãng, miễn phí công lắp đặt tại xưởng.</p>
+
+                <div class="product-grid">
+                    <div class="product-item">
+                        <span class="product-icon">🔋</span>
+                        <strong>Bình Ắc Quy</strong>
+                    </div>
+                    <div class="product-item">
+                        <span class="product-icon">🛢️</span>
+                        <strong>Dầu Nhớt</strong>
+                    </div>
+                    <div class="product-item">
+                        <span class="product-icon">🛑</span>
+                        <strong>Má Phanh</strong>
+                    </div>
+                    <div class="product-item">
+                        <span class="product-icon">💡</span>
+                        <strong>Đèn/Còi</strong>
+                    </div>
+                    <div class="product-item">
+                        <span class="product-icon">🧪</span>
+                        <strong>Nước Làm Mát</strong>
+                    </div>
+                    <div class="product-item">
+                        <span class="product-icon">🌧️</span>
+                        <strong>Gạt Mưa</strong>
+                    </div>
+                </div>
+                <div style="margin-top: var(--spacing-md); text-align: center;">
+                    <a href="tel:1900xxxx" style="color: var(--color-primary); font-weight: bold;">📞 Liên hệ báo giá
+                        lẻ</a>
+                </div>
+            </section>
+
+            <!-- Wholesale Section -->
+            <section class="section-card">
+                <h2>Bán Sỉ (Đối Tác/Garage)</h2>
+                <p style="margin-bottom: var(--spacing-md);">Chiết khấu cao cho Garage, đội xe, doanh nghiệp vận tải.
+                    Đăng ký đối tác ngay.</p>
+
+                <form onsubmit="event.preventDefault(); alert('Cảm ơn! Chúng tôi sẽ liên hệ lại sớm.');">
+                    <div class="form-group">
+                        <label class="form-label">Tên Garage / Doanh Nghiệp</label>
+                        <input type="text" class="form-input" required placeholder="Ví dụ: Garage A...">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Số Điện Thoại</label>
+                        <input type="tel" class="form-input" required placeholder="09xxxx">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Nhu Cầu Chính</label>
+                        <select class="form-input">
+                            <option>Nhập phụ tùng định kỳ</option>
+                            <option>Ký gửi hàng hóa</option>
+                            <option>Hợp tác cứu hộ</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="form-btn">ĐĂNG KÝ ĐỐI TÁC</button>
+                </form>
+            </section>
+
+        </div>
+
+        <!-- Guarantee Text -->
+        <div class="guarantee">
+            <h3 style="margin-bottom: var(--spacing-sm);">🤝 CAM KẾT CHẤT LƯỢNG</h3>
+            <p>"100% Linh Kiện Chính Hãng/OEM. Nói KHÔNG với hàng giả, hàng kém chất lượng."</p>
+            <p style="margin-top: var(--spacing-sm); font-style: italic;">"Uy tín là sinh mệnh của Garage Bác Sĩ Xe"</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

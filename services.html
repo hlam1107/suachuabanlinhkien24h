@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dịch Vụ & Bảng Giá - Garage Bác Sĩ Xe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/index.css">
+    <style>
+        body { background-color: #f0f2f5; }
+        .page-header {
+            background-color: var(--color-secondary);
+            color: white;
+            padding: var(--spacing-lg) var(--spacing-md);
+            text-align: center;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin: var(--spacing-xl) 0 var(--spacing-lg);
+            color: var(--color-secondary);
+        }
+
+        /* Pricing Table */
+        .pricing-table {
+            width: 100%;
+            background: white;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            border-collapse: collapse;
+            overflow: hidden;
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .pricing-table th, .pricing-table td {
+            padding: var(--spacing-md);
+            text-align: left;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .pricing-table th {
+            background-color: var(--color-secondary);
+            color: white;
+            font-weight: 600;
+        }
+
+        .pricing-table tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        .price-tag {
+            font-weight: 700;
+            color: var(--color-primary);
+        }
+
+        /* 5 Step Process */
+        .process-steps {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+            max-width: 800px;
+            margin: 0 auto var(--spacing-xl);
+        }
+
+        .step-card {
+            background: white;
+            padding: var(--spacing-md);
+            border-radius: var(--radius-md);
+            border-left: 5px solid var(--color-secondary);
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            align-items: flex-start;
+            gap: var(--spacing-md);
+        }
+
+        .step-number {
+            background: var(--color-secondary);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-weight: bold;
+        }
+
+        .step-content h3 {
+            margin-bottom: var(--spacing-xs);
+            color: var(--color-secondary);
+        }
+        
+        .alert-box {
+            background-color: #FFF3CD;
+            border: 1px solid #FFEeba;
+            color: #856404;
+            padding: var(--spacing-md);
+            border-radius: var(--radius-md);
+            margin-bottom: var(--spacing-lg);
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-bottom: var(--spacing-md);
+            color: white;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="page-header">
+        <div class="container">
+            <a href="index.html" class="btn-back">← Quay lại Trang Chủ</a>
+            <h1>BẢNG GIÁ & QUY TRÌNH</h1>
+            <p>Minh Bạch - Rõ Ràng - Không Phát Sinh Vô Lý</p>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Commitment -->
+        <div class="alert-box" style="margin-top: var(--spacing-lg);">
+            ⚠️ CAM KẾT: Mọi chi phí phát sinh đều được thông báo và PHẢI được sự đồng ý của khách hàng trước khi thực hiện.
+        </div>
+
+        <!-- Pricing Section -->
+        <h2 class="section-title">Bảng Giá Cứu Hộ Cơ Bản</h2>
+        <table class="pricing-table">
+            <thead>
+                <tr>
+                    <th>Dịch Vụ</th>
+                    <th>Mô Tả</th>
+                    <th>Giá Tham Khảo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kích Bình Ắc Quy</td>
+                    <td>Kích nổ máy tận nơi, kiểm tra sạc.</td>
+                    <td class="price-tag">Từ 150.000đ</td>
+                </tr>
+                <tr>
+                    <td>Thay Lốp Dự Phòng</td>
+                    <td>Thay lốp sơ cua có sẵn của xe.</td>
+                    <td class="price-tag">Từ 200.000đ</td>
+                </tr>
+                <tr>
+                    <td>Vá Lốp (Lưu động)</td>
+                    <td>Vá dùi/Vá nấm tại chỗ.</td>
+                    <td class="price-tag">Từ 100.000đ/lỗ</td>
+                </tr>
+                <tr>
+                    <td>Cẩu/Kéo Xe</td>
+                    <td>Cứu hộ về garage (dưới 10km).</td>
+                    <td class="price-tag">Từ 600.000đ</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Repair Process -->
+        <h2 class="section-title">Quy Trình 5 Bước Chuẩn Kỹ Sư</h2>
+        <div class="process-steps">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Tiếp Nhận & Chẩn Đoán</h3>
+                    <p>Sử dụng máy quét lỗi chuyên dụng (OBD) để xác định chính xác vấn đề. Lắng nghe mô tả của chủ xe.</p>
+                </div>
+            </div>
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Báo Giá & Phê Duyệt</h3>
+                    <p>Lên phương án sửa chữa chi tiết và báo giá. CHỈ thực hiện khi khách hàng đã đồng ý.</p>
+                </div>
+            </div>
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Thực Hiện Sửa Chữa</h3>
+                    <p>Kỹ thuật viên tay nghề cao thực hiện thao tác chuẩn xác, nhanh chóng.</p>
+                </div>
+            </div>
+            <div class="step-card">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Kiểm Tra & Vệ Sinh</h3>
+                    <p>Chạy thử, kiểm tra lại toàn bộ hệ thống. Vệ sinh sạch sẽ khu vực sửa chữa.</p>
+                </div>
+            </div>
+            <div class="step-card">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <h3>Bàn Giao & Bảo Hành</h3>
+                    <p>Bàn giao xe, giải thích hạng mục đã làm và trao phiếu bảo hành uy tín.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
